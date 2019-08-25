@@ -239,7 +239,7 @@ Host prince
 Be sure to replace the `NetID` for your NYU NetId
 
 ## Jupyter Notebooks and `rmate`
-(Running Jupyter Notebook on NYU HPC in 3 Clicks)[https://dorukkilitcioglu.com/2018/11/18/nyu-hpc-data-science.html]
+[Running Jupyter Notebook on NYU HPC in 3 Clicks](https://dorukkilitcioglu.com/2018/11/18/nyu-hpc-data-science.html)
 
 ## Transfer Files
 
