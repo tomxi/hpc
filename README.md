@@ -2,7 +2,7 @@
 
 A quick reference to access NYU's High Performance Computing Prince Cluster.
 
-The official wiki is [here](https://wikis.nyu.edu/display/NYUHPC/Clusters+-+Prince), this is an unofficial document created as a quick-start guide for first-time users with a focus in Python.
+The official wiki is [here](https://wikis.nyu.edu/display/NYUHPC/Clusters+-+Prince), this is an unofficial document created as a reminder cheat sheet for MARL with a focus in Python.
 
 ## File Systems
 
