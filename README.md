@@ -4,49 +4,11 @@ A quick reference to access NYU's High Performance Computing Prince Cluster.
 
 The official wiki is [here](https://wikis.nyu.edu/display/NYUHPC/Clusters+-+Prince), this is an unofficial document created as a quick-start guide for first-time users with a focus in Python.
 
-## Get an account
-
-You need to be affiliated to NYU and have a sponsor. 
-
-To get an account approved, follow [this steps.](https://wikis.nyu.edu/display/NYUHPC/Requesting+an+HPC+account+with+IIQ)
-
-## Log in
-
-Once you have been approved, you can access HPC from:
-
- 1. Within the NYU network:
-
-```bash
-ssh NYUNetID@prince.hpc.nyu.edu
-```
-
-Once logged in, the root should be:
-`/home/NYUNetID`, so running `pwd` should print:
-
-```bash
-[NYUNetID@log-0 ~]$ pwd
-/home/NYUNetID
-```
-
-2. From an off-campus location:
-
-First, login to the bastion host:
-
-```bash
-ssh NYUNetID@gw.hpc.nyu.edu
-```
-
-Then login to the cluster:
-
-```bash
-ssh prince.hpc.nyu.edu
-```
-
 ## File Systems
 
-You can get acces to three filesystems: `/home`, `/scratch`, and `/archive`.
+There are four file systems: `/home`, `/scratch`, `/BEEGFS`, and `/archive`.
 
-Scratch is a file system mounted on Prince that is connected to the compute nodes where we can upload files faster. Notice that the content gets periodically flushed.
+BEEGFS and Scratch are file systems mounted on Prince that are connected to the compute nodes where we can upload files faster. Notice that the content gets periodically flushed.
 
 ```bash
 [NYUNetID@log-0 ~]$ cd /scratch/NYUNetID
@@ -54,7 +16,11 @@ Scratch is a file system mounted on Prince that is connected to the compute node
 /scratch/NYUNetID
 ```
 
-`/home` and `/scratch` are separate filesystems in separate places, but you should use `/scratch` to store your files.
+Use `/home` for enviroments, and code. Use `/BEEGFS` and `/scratch` for storing data and program output during computation.
+
+## MARLites
+
+We also have access to `/archive/m/marl`
 
 ## Loading Modules
 
