@@ -18,9 +18,12 @@ BEEGFS and Scratch are file systems mounted on Prince that are connected to the 
 
 Use `/home` for enviroments, and code. Use `/BEEGFS` and `/scratch` for storing data and program output during computation.
 
-## MARLites
+The compute nodes can't see `/archive`.
+
+### MARLites
 
 We also have access to `/archive/m/marl`
+This is for storing data.
 
 ## Loading Modules
 
@@ -234,6 +237,9 @@ Host prince
 ```
 
 Be sure to replace the `NetID` for your NYU NetId
+
+## Jupyter Notebooks and `rmate`
+(Running Jupyter Notebook on NYU HPC in 3 Clicks)[https://dorukkilitcioglu.com/2018/11/18/nyu-hpc-data-science.html]
 
 ## Transfer Files
 
