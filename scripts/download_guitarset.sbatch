@@ -10,4 +10,4 @@ module purge
 source activate miniconda3-latest
 conda activate tonal_center
 
-python ./hpc/scripts/downalod_guitarset.py
+python ~/hpc/scripts/download_guitarset.py
