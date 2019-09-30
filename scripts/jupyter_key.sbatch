@@ -3,10 +3,11 @@
 #SBATCH --job-name=jupyter
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=4GB
-#SBATCH --time=2:00:00
+#SBATCH --mem=10GB
+#SBATCH --time=30:00:00
 
 module purge
+pyenv activate miniconda3-latest/envs/tonal_center
 
 ## Please don't modify the part after this line
 
