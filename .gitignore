@@ -1,2 +1,5 @@
 # Sublime
 *.sublime*
+
+# slurm.out
+*.out
