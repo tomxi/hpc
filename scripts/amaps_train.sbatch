@@ -3,6 +3,7 @@
 #SBATCH --job-name=amaps_train
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
 #SBATCH --gres=gpu:2
 #SBATCH --time=10:00:00
 #SBATCH --mem=10GB
