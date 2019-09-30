@@ -7,7 +7,8 @@
 #SBATCH --time=30:00:00
 
 module purge
-pyenv activate miniconda3-latest/envs/tonal_center
+source activate miniconda3-latest
+conda activate tonal_center
 
 ## Please don't modify the part after this line
 
@@ -39,4 +40,4 @@ if [ "$SLURM_JOBTMP" != "" ]; then
     export XDG_RUNTIME_DIR=$SLURM_JOBTMP
 fi
 
-jupyter notebook --no-browser --port $port --notebook-dir=$(pwd)
+jupyter lab --no-browser --port $port --notebook-dir=$(pwd)
