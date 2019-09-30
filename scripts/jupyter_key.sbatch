@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#SBATCH --job-name=jupyter
+#SBATCH --job-name=jupyter-key
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=10GB
 #SBATCH --time=30:00:00
 
 module purge
-source activate miniconda3-latest
-conda activate tonal_center
+module load rubberband/intel/1.8.1
+source activate miniconda3-latest/envs/tonal_center 
 
-## Please don't modify the part after this line
+##Please don't modify the part after this line
 
 port=$(shuf -i 6000-9999 -n 1)
 
@@ -27,7 +27,7 @@ If you are working off campus, you should already have ssh tunneling setup throu
 that you can directly login to prince with command
 ssh $USER@prince
 Please open an iTerm window, run command
-ssh -L $port:localhost:$port $USER@prince
+ssh -L $port:localhost:$port prince
 Step 2:
 Keep the iTerm windows in the previouse step open. Now open browser, find the line with
 The Jupyter Notebook is running at: $(hostname)
@@ -40,4 +40,4 @@ if [ "$SLURM_JOBTMP" != "" ]; then
     export XDG_RUNTIME_DIR=$SLURM_JOBTMP
 fi
 
-jupyter lab --no-browser --port $port --notebook-dir=$(pwd)
+jupyter lab --no-browser --port $port --notebook-dir=$HOME
