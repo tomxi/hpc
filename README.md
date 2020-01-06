@@ -261,6 +261,20 @@ This will use the settings in `/.ssh/config` to create a tunnel. **You need to l
 
 2. Transfer files
 
+Using `rsync` is preferred. See the [rsync wiki](https://wikis.nyu.edu/display/NYUHPC/Keeping+directories+in+sync+with+rsync) for more details.
+
+```bash
+rsync [options] source [source] destination
+```
+
+- a "Archive" mode - permissions and timestamps of the source are replicated at the destination.
+- v "Verbose".
+- n  "dry run" - don't actually do anything, just indicate what would be done.
+- C "follow CVS ignore conventions" - more on this below.
+- r "Recursive".
+- u "Update".
+
+
 ### Between your computer and the HPC
 
 - A File:
