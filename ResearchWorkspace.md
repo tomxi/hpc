@@ -12,6 +12,10 @@ New York City
 - [Request a collaborative RW storage allocation.](https://nyu.service-now.com/servicelink/catalog.do?sysparm_document_key=sc_cat_item,c0958d4a1334df00381b30128144b0fa)
 - Other requests can be sent via email to rw-support@nyu.edu.
 
+## Using Reserach Workspace
+[Using Reserach Workspace](https://nyu.service-now.com/servicelink/kb_search.do?id=KB0016464)
+[DTN](https://wikis.nyu.edu/display/NYUHPC/HPC+Data+Transfer+Nodes)
+
 ## Connect to HPC
 This option is available upon request only. Contact rw-support@nyu.edu if you would like to request access to the Research Workspace from the HPC cluster.
 
