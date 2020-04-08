@@ -8,6 +8,6 @@ Researchers and library curators
 New York City
 
 ## How to Request this Service
-Request an individual RW storage allocation.
-Request a collaborative RW storage allocation.
+[Request an individual RW storage allocation.](https://iiq.nyu.edu/identityiq/)
+[Request a collaborative RW storage allocation.](https://nyu.service-now.com/servicelink/catalog.do?sysparm_document_key=sc_cat_item,c0958d4a1334df00381b30128144b0fa)
 Other requests can be sent via email to rw-support@nyu.edu.
