@@ -1,4 +1,4 @@
-# NYU HPC
+# NYU HPC [OBSOLETE]
 
 A quick reference to access NYU's High Performance Computing Prince Cluster.
 
